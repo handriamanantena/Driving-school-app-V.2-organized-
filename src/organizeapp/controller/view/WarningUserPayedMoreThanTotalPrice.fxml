@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="242.0" prefWidth="551.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="organizeapp.controller.PersonOverviewController">
+   <children>
+      <HBox layoutX="178.0" layoutY="192.0" prefHeight="24.0" prefWidth="201.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Ok" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Cancel" />
+         </children>
+      </HBox>
+      <HBox layoutX="69.0" layoutY="46.0" prefHeight="13.0" prefWidth="420.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="275.0" text="Warning: The calculated total price was found to be" />
+            <Label fx:id="totalPriceLabel" prefHeight="17.0" prefWidth="51.0" />
+         </children>
+      </HBox>
+      <Label layoutX="69.0" layoutY="63.0" prefHeight="17.0" prefWidth="407.0" text="which is less than what the client payed. Please correct &quot;The Amount Payed&quot;." />
+   </children>
+</AnchorPane>

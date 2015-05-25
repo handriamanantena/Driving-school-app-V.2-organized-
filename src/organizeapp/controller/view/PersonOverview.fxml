@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="759.0" prefWidth="1268.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="organizeapp.controller.PersonOverviewController">
+    <children>
+        <TabPane prefHeight="700.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Student Data">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="736.0" prefWidth="1268.0">
+                            <children>
+                                <GridPane hgap="10.0" layoutX="14.0" layoutY="65.0" prefHeight="604.0" prefWidth="895.0" vgap="10.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="359.0" AnchorPane.topAnchor="65.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.0" minWidth="10.0" prefWidth="188.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="502.0" minWidth="10.0" prefWidth="351.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="39.0" prefWidth="315.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <padding>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </padding>
+                                    <children>
+                                        <TextField fx:id="firstNameTextField" onKeyPressed="#onNameChangeAction" prefHeight="25.0" prefWidth="174.0" promptText="First Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <TextField fx:id="lastNameTextField" onKeyPressed="#onNameChangeAction" prefHeight="25.0" prefWidth="72.0" promptText="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <TextField fx:id="addressTextField" promptText="Address" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                            <children>
+                                                <TextField fx:id="phoneNumber1AreaCodeTextField" onKeyPressed="#onThreeDigitCodePhoneNumberChangeAction">
+                                                    <HBox.margin>
+                                                        <Insets right="10.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <TextField fx:id="phoneNumber1firstThreeDigitsTextField" onKeyPressed="#onThreeDigitCodePhoneNumberChangeAction">
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" right="10.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <TextField fx:id="phoneNumber1lastFourDigitsTextField" onKeyPressed="#onFourDigitCodePhoneNumberChangeAction">
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" right="10.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                    <Label prefHeight="27.0" prefWidth="115.0" text="ext: ">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="phoneNumber1ExtensionTextField" onKeyPressed="#onextentionPhoneNumberChangeAction">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </TextField>
+                                            </children>
+                                            <GridPane.margin>
+                                                <Insets />
+                                            </GridPane.margin>
+                                        </HBox>
+                                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                            <children>
+                                                <TextField fx:id="phoneNumber2AreaCodeTextField" onKeyPressed="#onThreeDigitCodePhoneNumberChangeAction">
+                                                    <HBox.margin>
+                                                        <Insets right="10.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <TextField fx:id="phoneNumber2firstThreeDigitsTextField" onKeyPressed="#onThreeDigitCodePhoneNumberChangeAction">
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" right="10.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <TextField fx:id="phoneNumber2lastFourDigitsTextField" onKeyPressed="#onFourDigitCodePhoneNumberChangeAction">
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" right="10.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                    <Label prefHeight="27.0" prefWidth="115.0" text="ext: " />
+                                    <TextField fx:id="phoneNumber2ExtensionTextField" onKeyPressed="#onextentionPhoneNumberChangeAction" />
+                                            </children>
+                                        </HBox>
+                                        <ComboBox fx:id="programTypeCombo" onAction="#programTypeComboAction" prefHeight="25.0" prefWidth="444.0" promptText="Select Program" visibleRowCount="2" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                        <ComboBox fx:id="currentTheoryNumberCombo" disable="true" prefHeight="25.0" prefWidth="566.0" promptText="Initial Theory Number" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                        <ComboBox fx:id="practiceNumberCombo" disable="true" prefHeight="25.0" prefWidth="510.0" promptText="Initial Practice Number" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                        <ComboBox fx:id="languageCombo" prefHeight="25.0" prefWidth="482.0" promptText="Language" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                        <Button fx:id="addStudentButton" mnemonicParsing="false" onAction="#addStudentButtonClicked" prefHeight="25.0" prefWidth="138.0" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                                        <Label alignment="BOTTOM_RIGHT" prefHeight="17.0" prefWidth="64.0" text="First Name: " GridPane.rowIndex="1" />
+                                        <Label prefHeight="17.0" prefWidth="153.0" text="Last Name:" GridPane.rowIndex="2" />
+                                        <Label prefHeight="17.0" prefWidth="140.0" text="Address:" GridPane.rowIndex="3" />
+                                        <Label prefHeight="17.0" prefWidth="147.0" text="Phone Number 1:" GridPane.rowIndex="4" />
+                                        <Label prefHeight="17.0" prefWidth="162.0" text="Phone Number 2 (Optional):" GridPane.rowIndex="5" />
+                                        <Label prefWidth="144.0" text="Program:" GridPane.rowIndex="7" />
+                                        <Label prefHeight="17.0" prefWidth="194.0" text="Next uncompleted Theory Number:" GridPane.rowIndex="9" />
+                                        <Label prefHeight="17.0" prefWidth="200.0" text="Next uncompleted Practice Number:" GridPane.rowIndex="10" />
+                                        <Label prefWidth="144.0" text="Language:" GridPane.rowIndex="12" />
+                                        <Label prefHeight="17.0" prefWidth="140.0" text="Total Price: " GridPane.rowIndex="14" />
+                                        <Label prefHeight="17.0" prefWidth="142.0" text="Amount payed:" GridPane.rowIndex="13" />
+                                        <Label prefHeight="17.0" prefWidth="142.0" text="Date Registered:" />
+                                        <DatePicker fx:id="datePicker" onAction="#dateHandler" prefHeight="25.0" prefWidth="254.0" promptText="dd/mm/yyyy" GridPane.columnIndex="1" />
+                              <Label fx:id="errorDateLabel" textFill="RED" GridPane.columnIndex="2" />
+                              <Label fx:id="errorFirstNameLabel" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label fx:id="errorLastNameLabel" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label fx:id="errorAddressLabel" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label fx:id="errorphoneNumber1Label" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Label fx:id="errorphoneNumber2Label" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Label fx:id="errorProgramLabel" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                              <Label fx:id="errorTheoryLabel" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                              <Label fx:id="errorPracticeLabel" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                              <Label fx:id="errorLanguageLabel" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                              <Label fx:id="errorTotalPrice" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                              <Label fx:id="errorClientPayed" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                              <Label textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                              <Label prefHeight="17.0" prefWidth="144.0" text="Email: " GridPane.rowIndex="6" />
+                              <TextField fx:id="emailTextField" prefHeight="25.0" prefWidth="72.0" promptText="email" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Label textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <HBox prefHeight="25.0" prefWidth="349.0" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                                 <children>
+                                    <Label prefHeight="44.0" prefWidth="6.0" text="\$">
+                                       <HBox.margin>
+                                          <Insets right="0.5" />
+                                       </HBox.margin>
+                                    </Label>
+                                              <TextField fx:id="totalPriceDollarsTextField" editable="false" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#onPriceChangeAction" prefHeight="25.0" prefWidth="139.0" promptText="Total price of program:" />
+                                    <CheckBox fx:id="setTotalPriceCheckBox" mnemonicParsing="false" prefHeight="17.0" prefWidth="162.0" selected="true" text="Manually set total price">
+                                       <padding>
+                                          <Insets left="6.0" />
+                                       </padding>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                                 <children>
+                                    <Label prefHeight="44.0" prefWidth="6.0" text="\$" />
+                                              <TextField fx:id="amountPayedDollarsTextField" onKeyPressed="#onPriceChangeAction" prefHeight="25.0" prefWidth="449.0" promptText="Amount client payed:" />
+                                 </children>
+                              </HBox>
+                              <Label prefHeight="17.0" prefWidth="155.0" text="Number of Driving classes: " GridPane.rowIndex="8" />
+                              <TextField fx:id="numberOfDrivingClassesTextField" disable="true" onKeyPressed="#onIntegerChange" promptText="Number of Driving Classes" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <Label text="Cost per Driving class: " GridPane.rowIndex="15" />
+                              <Label text="Cost per Theory class" GridPane.rowIndex="16" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="15">
+                                 <children>
+                                    <Label prefHeight="44.0" prefWidth="6.0" text="\$">
+                                       <HBox.margin>
+                                          <Insets right="0.5" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="drivingClassRateTextField" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#onDrivingRateChange" prefHeight="25.0" prefWidth="139.0" promptText="Total price of program:" />
+                                    <CheckBox fx:id="checkBoxDefaultDrivingClassRate" mnemonicParsing="false" onAction="#onDefaultDrivingClassRateAction" prefHeight="17.0" prefWidth="153.0" selected="true" text="Default Rate per class ">
+                                       <padding>
+                                          <Insets left="6.0" />
+                                       </padding>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="16">
+                                 <children>
+                                    <Label prefHeight="44.0" prefWidth="6.0" text="\$">
+                                       <HBox.margin>
+                                          <Insets right="0.5" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="theoryClassRateTextField" disable="true" maxWidth="-Infinity" minWidth="-Infinity" onKeyPressed="#onTheoryRateChange" prefHeight="25.0" prefWidth="140.0" promptText="Total price of program:" />
+                                    <CheckBox fx:id="checkBoxDefaultTheoryClassRate" disable="true" mnemonicParsing="false" onAction="#onDefaultTheoryClassRateAction" prefHeight="17.0" prefWidth="157.0" selected="true" text="Default Rate per class">
+                                       <padding>
+                                          <Insets left="6.0" />
+                                       </padding>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="errorDrivingCostRate" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+                              <Label fx:id="errorTheoryCostRate" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+                              <Label fx:id="errorNumberOfDrivingClases" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                              <Label prefHeight="17.0" prefWidth="187.0" text="Include Theory Book in total price:" GridPane.rowIndex="11" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                 <children>
+                                    <Label prefHeight="44.0" prefWidth="6.0" text="\$">
+                                       <HBox.margin>
+                                          <Insets right="0.5" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="setBookPriceTextField" disable="true" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="139.0" promptText="Total price of program:" />
+                                    <CheckBox fx:id="includeBookPriceCheckBox" disable="true" mnemonicParsing="false" prefHeight="17.0" prefWidth="102.0" selected="true" text="Include book">
+                                       <padding>
+                                          <Insets left="6.0" />
+                                       </padding>
+                                    </CheckBox>
+                                    <CheckBox fx:id="setDefaultBookPrice" disable="true" mnemonicParsing="false" prefHeight="17.0" prefWidth="99.0" selected="true" text="Default Price">
+                                       <padding>
+                                          <Insets left="6.0" />
+                                       </padding>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                                    </children>
+                                </GridPane>
+                        <ComboBox editable="true" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="231.0" promptText="Search" />
+                        <Accordion fx:id="programPaymentLayout" layoutX="789.0" layoutY="64.0" prefHeight="542.0" prefWidth="422.0" visible="false">
+                           <panes>
+                              <TitledPane animated="false" prefHeight="293.0" prefWidth="223.0" text="Phase 1">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <GridPane layoutY="31.0" prefHeight="349.0" prefWidth="418.0">
+                                             <children>
+                                                <Label text="Theory 1" textFill="BLUE" GridPane.rowIndex="1" />
+                                                <Label text="Theory 2" textFill="BLUE" GridPane.rowIndex="2" />
+                                                <Label text="Theory 3" textFill="BLUE" GridPane.rowIndex="3" />
+                                                <Label text="Theory 4" textFill="BLUE" GridPane.rowIndex="4" />
+                                                <Label text="Theory 5" textFill="BLUE" GridPane.rowIndex="5" />
+                                                <CheckBox fx:id="checkBoxPayment01" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <CheckBox fx:id="checkBoxPayment11" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <CheckBox fx:id="checkBoxPayment21" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <CheckBox fx:id="checkBoxPayment31" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <CheckBox fx:id="checkBoxPayment41" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel01" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField01" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel11" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField11" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel21" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField21" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel31" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField31" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel41" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField41" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <Label text="Registration Day" textFill="BLUE" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabelRegistrationDay1" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextRegistrationDay1" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <CheckBox fx:id="checkBoxPaymentRegistrationDay1" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" />
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="9.0" prefWidth="66.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="94.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="197.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Phase 2">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <GridPane prefHeight="430.0" prefWidth="353.0">
+                                             <children>
+                                                <Label text="Theory 6" textFill="#0012ff" />
+                                                <Label text="In Car 1" textFill="RED" GridPane.rowIndex="1" />
+                                                <Label text="Theory 7" textFill="#0012ff" GridPane.rowIndex="3" />
+                                                <Label text="In Car 2" textFill="RED" GridPane.rowIndex="2" />
+                                                <Label text="In Car 3" textFill="RED" GridPane.rowIndex="4" />
+                                                <CheckBox fx:id="checkBoxPayment51" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" />
+                                                <CheckBox fx:id="checkBoxPayment61" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <CheckBox fx:id="checkBoxPayment71" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <CheckBox fx:id="checkBoxPayment81" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <CheckBox fx:id="checkBoxPayment91" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel51" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField51" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel61" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField61" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel71" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField71" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel81" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField81" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel91" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField91" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <Label text="In Car 4" textFill="RED" GridPane.rowIndex="5" />
+                                                <CheckBox fx:id="checkBoxPayment101" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel101" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField101" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="9.0" prefWidth="66.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="88.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="197.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" prefHeight="452.0" prefWidth="353.0" text="Phase 3">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <GridPane prefHeight="438.0" prefWidth="355.0">
+                                             <children>
+                                                <Label text="Theory 8" textFill="#0012ff" />
+                                                <Label text="In Car 5" textFill="RED" GridPane.rowIndex="1" />
+                                                <Label text="Theory 9" textFill="#0012ff" GridPane.rowIndex="3" />
+                                                <Label text="In Car 6" textFill="RED" GridPane.rowIndex="2" />
+                                                <Label text="In Car 7" textFill="RED" GridPane.rowIndex="4" />
+                                                <CheckBox fx:id="checkBoxPayment111" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" />
+                                                <CheckBox fx:id="checkBoxPayment121" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <CheckBox fx:id="checkBoxPayment131" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <CheckBox fx:id="checkBoxPayment141" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <CheckBox fx:id="checkBoxPayment151" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel111" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField111" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel121" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField121" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel131" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField131" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox onKeyPressed="#onPriceChangeAction" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel141" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField141" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel151" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField151" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <Label text="In Car 8" textFill="RED" GridPane.rowIndex="5" />
+                                                <CheckBox fx:id="checkBoxPayment161" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel161" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField161" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <Label text="Theory 10" textFill="#0012ff" GridPane.rowIndex="6" />
+                                                <Label text="In Car 9" textFill="RED" GridPane.rowIndex="7" />
+                                                <Label text="In Car 10" textFill="RED" GridPane.rowIndex="8" />
+                                                <CheckBox fx:id="checkBoxPayment171" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                <CheckBox fx:id="checkBoxPayment181" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                <CheckBox fx:id="checkBoxPayment191" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel171" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField171" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel181" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField181" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel191" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField191" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="9.0" prefWidth="66.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="88.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="197.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" prefHeight="512.0" prefWidth="339.0" text="Phase 4">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="428.0" prefWidth="351.0">
+                                       <children>
+                                          <GridPane prefHeight="437.0" prefWidth="353.0">
+                                             <children>
+                                                <Label text="Theory 11" textFill="#0012ff" />
+                                                <Label text="In Car 11" textFill="RED" GridPane.rowIndex="1" />
+                                                <Label text="Theory 12" textFill="#0012ff" GridPane.rowIndex="3" />
+                                                <Label text="In Car 12" textFill="RED" GridPane.rowIndex="2" />
+                                                <Label text="In Car 13" textFill="RED" GridPane.rowIndex="4" />
+                                                <CheckBox fx:id="checkBoxPayment201" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" />
+                                                <CheckBox fx:id="checkBoxPayment211" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <CheckBox fx:id="checkBoxPayment221" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <CheckBox fx:id="checkBoxPayment231" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <CheckBox fx:id="checkBoxPayment241" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel201" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField201" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel211" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField211" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel221" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField221" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel231" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField231" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel241" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField241" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <Label text="In Car 14" textFill="RED" GridPane.rowIndex="5" />
+                                                <CheckBox fx:id="checkBoxPayment251" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel251" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField251" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <Label text="In Car 15" textFill="RED" GridPane.rowIndex="6" />
+                                                <CheckBox fx:id="checkBoxPayment261" mnemonicParsing="false" onAction="#onPaymentCheckboxSelected" text="Payment" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <Label fx:id="errorPaymentLabel261" prefHeight="17.0" prefWidth="114.0" text="Label" />
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="24.0" prefWidth="16.0" text="\$" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField fx:id="paymentAmountTextField261" disable="true" onKeyPressed="#onPriceChangeAction" prefHeight="29.0" prefWidth="167.0" promptText="Payment Amount" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="9.0" prefWidth="66.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="88.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="197.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                           </panes>
+                        </Accordion>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Untitled Tab 2">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

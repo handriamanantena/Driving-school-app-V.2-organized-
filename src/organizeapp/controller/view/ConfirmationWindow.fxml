@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="organizeapp.controller.ConfirmationController">
+   <children>
+      <HBox layoutX="199.0" layoutY="356.0" prefHeight="28.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="confirmOkButton" mnemonicParsing="false" onAction="#onOKButtonAction" prefHeight="25.0" prefWidth="78.0" text="Ok" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Cancel" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <GridPane gridLinesVisible="true" layoutX="27.0" layoutY="96.0" prefHeight="246.0" prefWidth="544.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="107.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="353.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name: ">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label text="Address: " GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label text="Phone number 1:" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="106.0" text="Phone number 2:" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="nameLabel" prefHeight="17.0" prefWidth="359.0" GridPane.columnIndex="1">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="addressLabel" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="phone1Label" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="phone2Label" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="emailLabel" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="programLabel" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="languageLabel" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefWidth="106.0" text="Email: " GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefWidth="106.0" text="Program" GridPane.rowIndex="5">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefWidth="106.0" text="Language: " GridPane.rowIndex="6">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefWidth="106.0" text="Amount payed:" GridPane.rowIndex="7">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="amountPayedLabel" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="210.0" prefWidth="106.0" text="Total Price: " GridPane.rowIndex="8">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="totalPriceLabel" prefWidth="359.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <Label layoutX="199.0" layoutY="42.0" prefHeight="17.0" prefWidth="200.0" text="Is the folowing information correct?" />
+   </children>
+</AnchorPane>
