@@ -5,6 +5,7 @@
  */
 package organizeapp.controller;
 
+import ControllerTest.Tab2Controller;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -242,6 +243,8 @@ public class PersonOverviewController implements DefaultPricesInterface {
     private TextField paymentAmountTextField25 = new TextField();
     @FXML
     private TextField paymentAmountTextField26 = new TextField();
+    @FXML
+    Tab2Controller tab2Controller;
     //reference to main app
     private MainApp mainApp;
 
@@ -419,6 +422,7 @@ public class PersonOverviewController implements DefaultPricesInterface {
             errorTheoryLabel.setText("");
             errorPracticeLabel.setText("");
             errorTheoryCostRate.setText("");
+            this.tab2Controller.setText("old program");
 
         } else {
             //.setDisable(false);
@@ -431,6 +435,8 @@ public class PersonOverviewController implements DefaultPricesInterface {
             errorPracticeLabel.setText("Select 1 if student is still in phase 1"); //autimatically label if new student is selected
             // errorTheoryLabel.setText("* Select 0 for students starting the first module class"); //informs user that if 
             errorNumberOfDrivingClases.setText("");
+            this.tab2Controller.setText("new program");
+
         }
     }
 

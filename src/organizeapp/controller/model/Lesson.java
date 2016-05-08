@@ -81,7 +81,7 @@ public class Lesson {
     }
 
     @Override
-    protected Lesson clone()  {
+    public Lesson clone()  {
         return new Lesson(this);
     }
     

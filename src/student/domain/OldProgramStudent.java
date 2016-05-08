@@ -4,10 +4,12 @@
  * and open the template in the editor.
  */
 
-package organizeapp.controller.model;
+package student.domain;
 
+import organizeapp.controller.model.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
+
 
 /**
  *
